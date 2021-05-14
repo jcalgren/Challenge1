@@ -1,0 +1,197 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: arial;
+	background-color:#e2e2e2;
+	background-image: url('../images/ag.png');
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+	
+
+
+}
+
+#header{
+	
+	height:60px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+
+
+}
+
+#header img{
+	width:200px;
+	height:25px;
+	
+
+}
+
+#grid-container{
+	display:grid;
+	background-color:#858585;
+	
+	padding:10px;
+	grid-template-columns: 1fr;
+	grid-template-rows:5fr;
+	grid-gap: 2px;
+	grid-template-areas: 
+	"header"
+	"main"
+	"main2"
+	"main3"
+	"main4"
+}
+
+#grid-container >div {
+	
+	background-color:white;
+	
+
+}
+
+#demo{
+	font-size:20px;
+	color: white;
+	text-align: center;
+	font-family: arial;
+	
+	
+}
+
+h2{
+	
+	color: white;
+	text-align: center;
+	font-family: arial;
+	font-size:20px;
+}
+
+#item{
+	grid-area: header;
+	color: white;
+}
+
+#item1{
+	grid-area: main;
+	min-width:200px;
+
+}
+
+#item2{
+	grid-area: main2;
+	min-width:200px;
+}
+
+#item3{
+	grid-area: main3;
+	min-width:200px;
+
+}
+
+#item4{
+	grid-area: main4;
+	min-width:200px;
+}
+
+#gauge {
+    height: 370px;
+    width: 100%;
+}
+#chartContainer1{
+	height: 370px; 
+	width: 100%;
+}
+#chartContainer2{
+  
+  width: 100%;
+  height:370px;
+  
+}
+
+#chartContainer3{
+	height: 370px; 
+	width: 100%;
+}
+
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+
+}
+
+div > #item{
+	background-color:#252424;
+
+
+}
+
+a.canvasjs-chart-credit{
+	display:none;
+}
+
+
+@media screen and (min-width: 700px){
+
+#grid-container{
+	display:grid;
+	grid-auto-columns: 1fr 1fr;
+	grid-gap:10px;
+	grid-template-rows:auto;
+	grid-template-areas: 
+	"header header"
+	"main 	main"  
+	"main2  main3"  
+	"main4 	main4"
+	;
+}
+
+#demo{
+	font-size:30px;
+	color: white;
+	text-align: center;
+	font-family: arial;
+}
+
+
+
+@media screen and (min-width: 1000px){
+
+#grid-container{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:15px;
+	grid-template-rows:auto;
+	grid-template-areas: 
+	"header header"
+	"main 	main2"  
+	"main3  main4"
+
+	;
+}
+}
+
+@media screen and (min-width: 1441px){
+
+
+#grid-container{
+	display:grid;
+	grid-gap:20px;
+	padding:20px;
+	max-width:1440px;
+	margin:auto;
+	
+}
+}
+
+
+
+
+
